@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
+import Photo from './Photo';
+import PhotoGridContainer from '../containers/PhotoGridContainer';
 
 class App extends Component {
   render() {
@@ -7,8 +9,9 @@ class App extends Component {
       <div>
         <h1>
           <Link to="/">Reduxstagram</Link>
+          <PhotoGridContainer />
         </h1>
-        {this.props.children}
+        { this.props.children }
       </div>
     );
   }

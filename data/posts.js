@@ -1,4 +1,4 @@
-const posts = [
+const Posts = [
    {
       "code":"BAcyDyQwcXX",
       "caption":"Lunch #hamont",
@@ -169,5 +169,4 @@ const posts = [
    }
 ];
 
-
-module.exports = posts;
+module.exports = Posts;

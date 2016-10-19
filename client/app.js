@@ -12,7 +12,7 @@ import App from './components/App';
 ReactDOM.render(
   <Provider store={store}>
     <Router history={browserHistory}>
-      <Route path="/" component={App}>
+      <Route path="/" component={ App }>
       </Route>
     </Router>
   </Provider>,
