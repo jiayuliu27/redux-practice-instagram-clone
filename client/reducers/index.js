@@ -10,6 +10,8 @@ const rootReducer = function (state = { posts: Posts, post: Posts[0], comments: 
   		return Object.assign({}, state, {posts: action.posts});
   	case 'GET_COMMENTS':
   		return Object.assign({}, state, {comments: action.comments});
+  	case 'LIKE_POST':
+  		return Object.assign({}, state, { post: action.post });
     default: 
 	    return state;
   }

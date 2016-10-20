@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-// import { displayPost } from '../action/creators';
+import { incrementLike } from '../action/creators';
 import SinglePost from '../components/SinglePost';
 
 // const mapStateToProps = (state) => {
@@ -7,11 +7,11 @@ import SinglePost from '../components/SinglePost';
 // 	return { post: state.post };
 // };
 
-// const mapDispatchToProps = dispatch => ({
-// 	displayAPost: (post) => {
-// 		dispatch(displayPost(post));
-// 	}
-// });
+const mapDispatchToProps = dispatch => ({
+	likePost: (post) => {
+		dispatch(incrementLike(post));
+	}
+});
 
 // export default connect(
 // 	mapStateToProps,
